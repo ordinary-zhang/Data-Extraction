@@ -1,0 +1,28 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:postgresql://52.62.1.59:5432/hik_test
+    username: hik_test
+    password: hik12345+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  mvc:
+    static-path-pattern: /static/**
+server:
+  port: 9020
+
+
+
+url: http://52.62.1.181:9020/LLGA/open/api/dataQuery
+loginUrl: http://52.62.0.249:9080/datamanager/newLogin
+zUrl: http://52.62.0.249:9080/datamanager/service/api
+#zUrl: http://localhsot:9020/datamanager/service/api/sites/data
+#dataUrl: http://localhsot:9020/datamanager/service/api/imsi/data
+#http://${ip}:${port}/datamanager/service/api/matchdata
+username: test
+password: test
+filePath: /static/
+
+imgeUrl: http://52.62.1.181:9020/templates

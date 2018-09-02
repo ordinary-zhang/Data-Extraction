@@ -1,0 +1,29 @@
+spring:
+  profiles:
+   active:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/test?autoReconnect=true&useSSL=true
+    username: root
+    password: 123456
+  jpa:
+    hibernate:
+     ddl-auto: update
+    show-sql: true
+  mvc:
+    static-path-pattern: /static/**
+  resources:
+    static-locations: classpath:static/,file:${spring.http.multipart.location}
+
+server:
+  port: 9020
+
+#url: http://localhost:9020/LLGA/open/api/dataQuery
+url: http://localhost:9020/LLGA/open/api/dataQuery
+loginUrl: http://localhost:9020/datamanager/newLogin
+zUrl: http://localhost:9020/datamanager/service/api
+username: admin
+password: Abc123++
+filePath: /image/
+
+imageUrl: http://52.62.1.181:9020/
